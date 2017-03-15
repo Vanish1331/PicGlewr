@@ -11,11 +11,127 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:rotation="20">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/view" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#44000000"
+                android:backgroundTint="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100dp"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:text="Draws and Stuff"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="32sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:rotation="20">
+
+            <ImageView
+                android:id="@+id/image_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#44000000"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:text="Animation"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="32sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:rotation="20">
+
+            <ImageView
+                android:id="@+id/image_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/view2" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#44000000"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100dp"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:text="stuff"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="32sp" />
+
+        </RelativeLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -24,6 +140,16 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         >
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/delly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu"
+        />
+
+
+
 
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
