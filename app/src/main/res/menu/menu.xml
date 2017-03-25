@@ -4,10 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
-    <item
-        android:title="Number I"
-
-        />
 
 
 
@@ -18,22 +14,39 @@
 
         <menu>
             <item
-                android:id="@+id/stuff"
+                android:id="@+id/main"
                 android:checkable="true"
                 android:icon="@drawable/ic_loyalty_black_24dp"
+                android:title="menu"/>
+            <item
+                android:id="@+id/drawss"
+                android:checkable="true"
+                android:icon="@drawable/ic_invert_colors_black_24dp"
                 android:title="stuff" />
+
+            <item
+                android:id="@+id/animation"
+                android:checkable="true"
+                android:icon="@drawable/ic_settings_cell_black_24dp"
+                android:title="Animation"/>
+
+            <item
+                android:id="@+id/lels"
+                android:checkable="true"
+                android:icon="@drawable/ic_work_black_24dp"
+                android:title="lels"/>
+
+
         </menu>
     </item>
 
 
     <item
         android:id="@+id/smash"
-        android:title="life"
+        android:title="settings"
         />
 
 
-    <item
-        android:title="DUD"
-        />
+
 
 </menu>

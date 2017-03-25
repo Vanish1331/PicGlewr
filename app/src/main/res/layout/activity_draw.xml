@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawwr_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="forpeeps.picgluewr.MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/gActionButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="420dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:backgroundTint="@android:color/holo_blue_bright"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/actionbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="300dp"
+            app:fabSize="normal"
+            android:layout_marginTop="420dp"
+            android:clickable="true"
+
+            app:srcCompat="@drawable/ic_invert_colors_black_24dp" />
+
+        <com.agsw.FabricView.FabricView
+            android:id="@+id/faricView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#111"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/delly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu"
+            />
+
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
